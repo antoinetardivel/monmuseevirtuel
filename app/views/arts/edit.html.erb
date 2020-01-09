@@ -1,6 +1,9 @@
-<h1>Editing Art</h1>
+<div class="container">
+  <p class="mesoeuvrestext">Éditer Œuvre</p>
+  <div class="jumbotron">
+  	<%= render 'form', art: @art %>
+    <%= link_to 'Montrer', @art, class: 'btn btn-primary' %> |
+	<%= link_to 'Retour', arts_path, class: 'btn btn-primary' %>
+  </div>
 
-<%= render 'form', art: @art %>
-
-<%= link_to 'Show', @art %> |
-<%= link_to 'Back', arts_path %>
+</div>

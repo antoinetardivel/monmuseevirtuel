@@ -1,35 +1,21 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Arts</h1>
+  <p id="notice"><%= notice %></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Author</th>
-      <th>Date</th>
-      <th>Picture</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+  <p class="mesoeuvrestext">Les Œuvres</p>
+  <div class="row">
     <% @arts.each do |art| %>
-      <tr>
-        <td><%= art.Title %></td>
-        <td><%= art.Author %></td>
-        <td><%= art.Date %></td>
-        <td><img src="<%= art.Picture %>"/></td>
-        <td><%= art.Description %></td>
-        <td><%= link_to 'Show', art %></td>
-        <td><%= link_to 'Edit', edit_art_path(art) %></td>
-        <td><%= link_to 'Destroy', art, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="<%= art.Picture %>" class="img-fluid"/>
+          <div class="card-body">
+            <h5 class="card-title"><%= art.Title %></h5>
+            <!--<p class="card-text"><%= art.Description %></p>-->
+            <%= link_to 'Montrer', art, class: 'btn btn-primary' %>
+            <%= link_to 'Editer', edit_art_path(art), class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
 
-<br>
-
-<%= link_to 'New Art', new_art_path %>
+<!--background-image: linear-gradient(to right, red , yellow);-->

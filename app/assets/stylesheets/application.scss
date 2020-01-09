@@ -1,14 +1,86 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- */
 @import "bootstrap";
+
+.card:hover{
+	transform: scale(1.05);
+	transform-origin: center;
+	transition:0.2s;
+}
+.btn{
+	background-color: #533aed;
+	border-color: #533aed;
+	color: white;
+}
+.btn:hover{
+	background-color: #3a1eed;
+	border-color: #3a1eed;
+	color: white;
+}
+.banierepage{
+	background-image: url('https://c.pxhere.com/photos/3a/f6/philadelphia_building_architecture_pennsylvania_travel_tourism_urban_philadelphia_skyline-829473.jpg!d');
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	/*-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);*/
+}
+.grad{
+	display: flex;
+	width:100%;
+	height:100%;
+	background-image: linear-gradient(to right, rgba(83,58,237,0.7), rgba(0,0,0,0.5));
+	align-content: center;
+	justify-content:center;
+}
+.mestitres{
+	width:auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+.titre1{
+	font-size:100px;
+	font-weight: 900; font-style: italic;
+	text-align:center;
+	color:white;
+}
+.titre2{
+	font-size:50px;
+	font-weight: 900; font-style: italic;
+	text-align:center;
+	color:white;
+}
+.navbar{
+	position:fixed;
+	z-index:1;
+	width:100%;
+}
+.mesoeuvrestext{
+	font-size:50px;
+	font-weight: 900; font-style: italic;
+	color:white;
+	text-align:center;
+}
+.blinking{
+    animation:blinkingText 0.8s infinite;
+    transform: rotate(90deg);
+    width:60px;
+    color:white;
+    font-size:50px;
+    margin-left: auto;
+	margin-right: auto;
+
+}
+@keyframes blinkingText{
+    0%{     color: #white;    }
+    49%{    color: #white; }
+    50%{    color: transparent; }
+    99%{    color: #white;  }
+    100%{   color: #white;    }
+}
+body{
+background-image: linear-gradient(to bottom, black , #533aed);
+}

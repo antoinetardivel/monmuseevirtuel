@@ -1,31 +1,15 @@
 <div class="container">
-  <p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Title:</strong>
-    <%= @art.Title %>
-  </p>
+  <p class="mesoeuvrestext">Détails de l'Œuvres</p>
 
-  <p>
-    <strong>Author:</strong>
-    <%= @art.Author %>
-  </p>
+  <div class="jumbotron">
+    <h1 class="display-4"><%= @art.Title %></h1>
+    <h2><%= @art.Author %> - <%= @art.Date %></h2>
+    <img src="<%= @art.Picture %>" class="img-fluid"/>
+    <p class="lead" style="margin-top: 10px;"><%= @art.Description %></p>
+    <hr class="my-4">
+    <%= link_to 'Editer', edit_art_path(@art), class: 'btn btn-primary'%> |
+    <%= link_to 'Retour', arts_path, class: 'btn btn-primary'%>
+  </div>
 
-  <p>
-    <strong>Date:</strong>
-    <%= @art.Date %>
-  </p>
-
-  <p>
-    <strong>Picture:</strong>
-    <%= @art.Picture %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= @art.Description %>
-  </p>
-
-  <%= link_to 'Edit', edit_art_path(@art) %> |
-  <%= link_to 'Back', arts_path %>
 </div>

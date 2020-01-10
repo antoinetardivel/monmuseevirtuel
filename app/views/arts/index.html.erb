@@ -2,7 +2,7 @@
   <p id="notice"><%= notice %></p>
 
   <p class="mesoeuvrestext">Les Œuvres</p>
-  <div class="row justify-content-center" class="mesvignettes">
+  <div class="row justify-content-center space-evenly" class="mesvignettes">
     <% @arts.each do |art| %>
         <div class="card">
           <div class="divimagevignette" style="background-image: url(<%= art.Picture %>);">

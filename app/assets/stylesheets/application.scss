@@ -90,10 +90,12 @@ background-image: linear-gradient(to bottom, black , #533aed);
 }
 .card{
 	margin-top: 10vh;
-	margin-right: 10vh;
+	margin-right: 5vh;
+	margin-left: 5vh;
 	height: 60vh;
 	border-radius: 0px;
 	box-shadow: 8px 8px 12px black;
+	overflow: hidden;
 }
 .mesboutonvignette{
 	margin-bottom: 0;
@@ -109,10 +111,12 @@ background-image: linear-gradient(to bottom, black , #533aed);
   	background-size: cover;
   	width: 50vh;
   	height:50vh;
+  	background-position: center;
 }
 .mesvignettes{
 	margin-top: -200px;
 }
 .row{
 	margin-top: -80px;
+
 }

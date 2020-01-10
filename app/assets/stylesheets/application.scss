@@ -9,6 +9,7 @@
 	background-color: #533aed;
 	border-color: #533aed;
 	color: white;
+	border-radius: 0px;
 }
 .btn:hover{
 	background-color: #3a1eed;
@@ -21,6 +22,7 @@
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+  	background-position: center;
   	/*-webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);*/
@@ -46,10 +48,12 @@
 	font-weight: 900; font-style: italic;
 	text-align:center;
 	color:white;
+	padding: 0;
 }
 .titre2{
-	font-size:50px;
-	font-weight: 900; font-style: italic;
+	margin-top: -15px;
+	font-size:35px;
+	font-weight: 700; font-style: italic;
 	text-align:center;
 	color:white;
 }
@@ -83,4 +87,32 @@
 }
 body{
 background-image: linear-gradient(to bottom, black , #533aed);
+}
+.card{
+	margin-top: 10vh;
+	margin-right: 10vh;
+	height: 60vh;
+	border-radius: 0px;
+	box-shadow: 8px 8px 12px black;
+}
+.mesboutonvignette{
+	margin-bottom: 0;
+	margin-top: auto;
+}
+.card-body{
+	margin-bottom: 0;
+	height: auto;
+}
+.divimagevignette{
+	background-position: center;
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	width: 50vh;
+  	height:50vh;
+}
+.mesvignettes{
+	margin-top: -200px;
+}
+.row{
+	margin-top: -80px;
 }

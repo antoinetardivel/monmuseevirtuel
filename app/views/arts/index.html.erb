@@ -2,19 +2,23 @@
   <p id="notice"><%= notice %></p>
 
   <p class="mesoeuvrestext">Les Œuvres</p>
-  <div class="row">
+  <div class="row justify-content-center" class="mesvignettes">
     <% @arts.each do |art| %>
-      <div class="col-md-2">
         <div class="card">
-          <img src="<%= art.Picture %>" class="img-fluid"/>
+          <div class="divimagevignette" style="background-image: url(<%= art.Picture %>);">
+            
+          </div>
+          <!--<img src="<%= art.Picture %>" class="img-fluid" class="img"/>-->
           <div class="card-body">
             <h5 class="card-title"><%= art.Title %></h5>
             <!--<p class="card-text"><%= art.Description %></p>-->
-            <%= link_to 'Montrer', art, class: 'btn btn-primary' %>
-            <%= link_to 'Editer', edit_art_path(art), class: 'btn btn-primary' %>
+            <div class="mesboutonvignette">
+              <%= link_to 'Montrer', art, class: 'btn btn-primary' %>
+              <%= link_to 'Editer', edit_art_path(art), class: 'btn btn-primary' %>
+            </div>
           </div>
         </div>
-      </div>
+
     <% end %>
   </div>
 
